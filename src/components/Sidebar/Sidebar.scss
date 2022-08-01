@@ -3,8 +3,10 @@
   width: 60px;
   position: absolute;
   top: 0;
+  right: 0;
   z-index: 3;
   min-height: 500px;
+  height: 100%;
 
   .logo {
     display: block;
