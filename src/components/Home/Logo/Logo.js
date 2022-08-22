@@ -4,7 +4,7 @@ import "./Logo.scss";
 import LogoS from "../../../assets/images/logo-s.png";
 
 import gsap from "gsap-trial";
-import DrawSVGPlugin from "gsap-trial/DrawSVGPlugin";
+// import DrawSVGPlugin from "gsap-trial/DrawSVGPlugin";
 
 function Logo() {
   const bgRef = useRef();
@@ -20,16 +20,16 @@ function Logo() {
         duration: 1,
         opacity: 1,
       })
-      .fromTo(
-        outlineLogoRef.current,
-        3,
-        {
-          drawSVG: "100% 100%",
-        },
-        {
-          drawSVG: true,
-        }
-      );
+//       .fromTo(
+//         outlineLogoRef.current,
+//         3,
+//         {
+//           drawSVG: "100% 100%",
+//         },
+//         {
+//           drawSVG: true,
+//         }
+//       );
 
     gsap.fromTo(
       solidLogoRef.current,
@@ -38,8 +38,8 @@ function Logo() {
       },
       {
         opacity: 1,
-        delay: 4,
-        duration: 4,
+        delay: 2,
+        duration: 2,
       }
     );
   }, []);
